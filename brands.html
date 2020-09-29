@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Above meta tags must come first in the head; other content must following these tags-->
+    <meta name="description" content="Airbrush brands information">
+    
+    <title>Brands</title>
+    
+    <!-- Link to normalize.css for older browser support -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <!-- Link to Custom CSS -->
+    <link rel="stylesheet" href="css/mystyles.css">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to custom google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Link to javascript file -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+
 </head>
 <body>
-    
+    <!-- Navbar -->
+
+    <div class="topnav">
+        <a href="index.html" class="active">Airbrush Depot</a>
+        <!--Links below are hidden by default-->
+        <div id="navLinks">
+            <a href="#">Brands</a>
+            <a href="#">Reviews</a>
+            <a href="#">Techniques</a>
+            <a href="#">Order Now</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->   
+        <a href="javascript:void(0)" class="icon" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
 </body>
 </html>
