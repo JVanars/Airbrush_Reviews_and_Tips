@@ -5,18 +5,50 @@
 }
 
 body {
-    font-family: 'Oswald', sans-serif;
-    background-color: beige;
+    font-family: 'Oswald', Arial, sans-serif;
+    background-color: #ebe5e5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
+html, body {
+  height: 100%;
+}
+
+.row, .footer, .header {
+  padding: 10px 16px;
+}
+
+.row {
+  background-color: #f2f2f2;
+}
+
+.row, .primary {
+  flex: 1 0 auto;
+}
+
+.col {
+  padding: 1.5em 1em;
+}
+
+p {
+  padding: .5em 0;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: black;
+  color: white;
+}
 
 /*Styles for main navbar*/
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation and set flex grow and shrink values to prevent navbar from disappearing. */
 .topnav {
-  background-color:#2c29c0;
+  background-color: #70598b;
   overflow: hidden;
+  flex: 0 0 auto;
 }
-
 /* Style the links inside the navigation bar */
 .topnav a:not(:first-child) {display:none;}
 
@@ -37,9 +69,7 @@ body {
   text-decoration: none;
   padding: 10px 16px;
 }
-
-
-/* Adds the responsive class to topnav using JavaScript when a user clicks on the hamburger icon.*/
+/* Responsive class is added by JavaScript when a user clicks on the hamburger menu icon.*/
 .topnav.responsive {position: relative;}
 .topnav.responsive a.icon {
   position: absolute;
@@ -50,38 +80,48 @@ body {
   float: none;
   display: block;
   text-align: left;
-  color: #f2f2f2;
+  color:#f2f2f2;
   text-decoration: none;
   padding: 10px 16px;
 }
-
-
-
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: rgb(131, 142, 161);
   color: black;
 }
-
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 /* End of styles for main navbar*/
 
+img {
+  display: flex;
+}
 
+.responsiveImg {
+  width: 100%;
+  height: auto;
+}
+
+/*Modern clearfix*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 
 /* Media Queries */
+
+/*breakpoint at 768px.*/
 @media (min-width: 768px) {
-  
-  /*Displays the menu items that are hidden in the hamburger menu by default when screen width is 768px or wider.*/
+  /*Displays the menu items that are hidden in the hamburger menu by default.*/
   .topnav a:not(:first-child) {display: block;}
 
-  /*Styling for topnav menu items when screen size is 768px wide or wider.*/
-  .topnav a {
+  /*Styling for topnav menu items when screen size is 768px wide or wider. Included ".topnav.responsive a" to account for user leaving the hamburger menu open before re-sizing the screen width.*/
+  .topnav a, .topnav.responsive a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -93,6 +133,36 @@ body {
   /*Hides the hamburger menu icon when screen reaches 768px*/
   .topnav a:last-child {
     display: none;
+  }
+
+  /*Display two columns at 768px*/
+  .row {
+    display: flex;
+  }
+
+  .col  {
+    flex: 1 50%;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    height: 150px;
+  }
+
+}
+
+/*Breakpoint at 1025px.*/
+@media (min-width: 1025px) {
+
+  .col {
+    flex-basis: 0;
+  }
+
+  .primaryContent {
+    flex-grow: 1.5;
   }
 
 }
