@@ -20,9 +20,6 @@ html, body {
   padding: 10px 16px;
 }
 
-.row {
-  background-color: #f2f2f2;
-}
 
 .row, .primary {
   flex: 1 0 auto;
@@ -40,6 +37,7 @@ p {
   flex-shrink: 0;
   background-color: black;
   color: white;
+  font-size: 1.5em;
 }
 
 /*Styles for main navbar*/
@@ -104,7 +102,18 @@ img {
   height: auto;
 }
 
-/*Modern clearfix*/
+.social {
+  padding: .5em;
+  font-size: .75em;
+}
+
+.social a {
+  display: none;
+  list-style-type: none;
+  float: right;
+}
+
+/*Modern clearfix*/ /*might remove this*/
 .clearfix::after {
   content: "";
   clear: both;
@@ -147,9 +156,17 @@ img {
   .row {
     flex-wrap: wrap;
   }
-
+/*Caps height of logo image at 150px when screen reaches 768px or wider.*/
   #logo {
     height: 150px;
+  }
+
+  .social {
+    text-align: left;
+  }
+
+  .social a {
+    display: inline;
   }
 
 }
