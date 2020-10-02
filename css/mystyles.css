@@ -16,17 +16,22 @@ html, body {
   height: 100%;
 }
 
+h2, p {
+  text-align: left;
+}
+
 .row, .footer, .header {
   padding: 10px 16px;
 }
 
 
-.row, .primary {
+.row {
   flex: 1 0 auto;
 }
 
 .col {
   padding: 1.5em 1em;
+  background-color: white;
 }
 
 p {
@@ -38,6 +43,15 @@ p {
   background-color: black;
   color: white;
   font-size: 1.5em;
+}
+
+footer a:link {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:visited {
+  color: #f2f2f2;
 }
 
 /*Styles for main navbar*/
@@ -87,12 +101,17 @@ p {
   background-color: rgb(131, 142, 161);
   color: black;
 }
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
+
 /* End of styles for main navbar*/
 
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+/* Styles for images */
 img {
   display: flex;
 }
@@ -102,16 +121,16 @@ img {
   height: auto;
 }
 
+#logo {
+  max-height: 250px;
+}
+
+/* Base styles for footer social section*/
 .social {
   padding: .5em;
   font-size: .75em;
 }
 
-.social a {
-  display: none;
-  list-style-type: none;
-  float: right;
-}
 
 /*Modern clearfix*/ /*might remove this*/
 .clearfix::after {
@@ -119,6 +138,7 @@ img {
   clear: both;
   display: table;
 }
+
 
 
 
@@ -148,26 +168,35 @@ img {
   .row {
     display: flex;
   }
-
+ 
   .col  {
     flex: 1 50%;
   }
-
+  
   .row {
     flex-wrap: wrap;
   }
-/*Caps height of logo image at 150px when screen reaches 768px or wider.*/
-  #logo {
-    height: 150px;
+
+  .header {
+    display: flex;
+  }
+
+  .headerContent {
+    padding-left: 1em;
+    flex: 2 1 auto;
+    width: auto;
+  }
+
+/* Caps image height when screens reach 768px or wider */
+
+  #mainAirbrush {
+    height: 200px;
   }
 
   .social {
-    text-align: left;
+    text-align: right;
   }
 
-  .social a {
-    display: inline;
-  }
 
 }
 
@@ -178,8 +207,14 @@ img {
     flex-basis: 0;
   }
 
-  .primaryContent {
-    flex-grow: 1.5;
+  .mainContent {
+    flex-grow: 2;
+  }
+
+  .responsiveImg {
+    max-width: 1025px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
 }
