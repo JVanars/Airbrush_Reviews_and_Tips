@@ -7,3 +7,21 @@ function hamburger() {
     x.className = "topnav";
   }
 }
+
+function readMore() {
+  var y = document.getElementById("moreInfo");
+  if (y.className === "more") {
+    y.className += " additionalInfo";
+  } else {
+    y.className = "more";
+  }
+}
+
+function readLess() {
+  var z = document.getElementById("readMore");
+  if (z.innerHTML === 'Learn More') {
+    z.innerHTML = 'Learn Less';
+  } else {
+    z.innerHTML = 'Learn More';
+  }
+}

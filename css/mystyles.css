@@ -125,6 +125,33 @@ img {
   max-height: 250px;
 }
 
+/* Styles for "Read More" buttons and hidden sections*/
+.more {
+  display: none;
+}
+
+.more.additionalInfo {
+  display: inline-block;
+}
+
+.moreParent {
+  text-align: right;
+}
+
+button {
+  padding: .5em;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #eee;
+}
+
+
+
+
 /* Base styles for footer social section*/
 .social {
   padding: .5em;
