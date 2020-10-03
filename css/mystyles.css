@@ -150,6 +150,30 @@ button:hover {
 }
 
 
+/* Styles for Form/Contact Us page */
+.form {
+  flex: 1;
+  display: inline-block;
+}
+
+.primaryForm {
+  text-align: left;
+  padding: 1em 15%;
+  background: white;
+  display: block;
+}
+
+.input {
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+.formGroup {
+  margin-top: 1em;
+}
 
 
 /* Base styles for footer social section*/
