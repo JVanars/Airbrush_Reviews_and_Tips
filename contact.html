@@ -40,7 +40,7 @@
     </div>
 
     <div class="form">
-        <form class="primaryForm" action="contact.html" method="POST">
+        <form class="primaryForm" name="contactUs" action="contact.html" onsubmit="return validateEmail()" method="POST">
 
             <div class="formHeader">
                 <h1>Contact Us</h1>
@@ -48,15 +48,15 @@
 
             <div class="formGroup">
                 <label for="name">Name</label>
-                <input type="text" class="input" id="name" name="user_name" placeholder="Name"required>
+                <input type="text" class="input" id="name" name="user_name" placeholder="Name">
             </div>
             <div class="formGroup">
                 <label>Email</label>
-                <input type="email" class="input" id="mail" name="user_email" placeholder="your_email@example.com" required>
+                <input type="email" class="input" id="mail" name="user_email" placeholder="your_email@example.com">
             </div>
             <div class="formGroup">
                 <label>Message:</label>
-                <textarea id="message" class=input name="user_message" rows="6" placeholder="Enter your message here!" required></textarea>
+                <textarea id="message" class="input" name="user_message" rows="6" placeholder="Enter your message here!"></textarea>
             </div>
             <div class="formBtnGroup">
                 <button type="submit" class="button">Submit</button>

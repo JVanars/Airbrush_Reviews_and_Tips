@@ -25,3 +25,15 @@ function readLess() {
     z.innerHTML = 'Learn More';
   }
 }
+
+function validateEmail() {
+  var x = document.forms["contactUs"]["user_name"].value;
+  var y = document.forms["contactUs"]["user_email"].value;
+  var z = document.forms["contactUs"]["user_message"].value;
+  if (x == "" || y == "" || z == "") {
+    alert("All present fields must be filled out.");
+    return false;
+  } else {
+    alert("Thank you! Your message has been submitted and we will contact you soon!")
+  }
+}

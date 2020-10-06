@@ -149,17 +149,51 @@ button:hover {
   background: #eee;
 }
 
+/* Primary section styles */
+.primary {
+  flex: 1;
+  text-align: center;
+}
+
+/*Styles for Reviews page*/
+
+#primeReview a {
+  text-decoration: none;
+
+}
+
+#primeReview div:nth-of-type(odd) {
+  background-color: black;
+  color: white;
+}
+
+#primeReview div:nth-of-type(even) {
+  background-color: yellow;
+}
+
+#primeReview div:nth-of-type(odd) a {
+  color: white;
+}
+ 
+
+.reviews {
+  padding: .5em 10% 2em 10%;
+}
+
+.reviewH2 {
+  padding-bottom: 1em;
+}
 
 /* Styles for Form/Contact Us page */
 .form {
   flex: 1;
   display: inline-block;
+  background: white;
 }
 
 .primaryForm {
   text-align: left;
   padding: 1em 15%;
-  background: white;
   display: block;
 }
 
@@ -266,6 +300,10 @@ label {
     max-width: 1025px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .reviewH2 {
+    text-align: center;
   }
 
 }
