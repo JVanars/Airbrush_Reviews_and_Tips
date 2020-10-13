@@ -30,12 +30,12 @@ h2, p {
 }
 
 .col {
-  padding: 1.5em 1em;
+  padding: 1.5rem 1rem;
   background-color: white;
 }
 
 p {
-  padding: .5em 0;
+  padding: .5rem 0;
 }
 
 .footer {
@@ -57,11 +57,11 @@ footer a:visited {
 /*Styles for main navbar*/
 /* Add a background color to the top navigation and set flex grow and shrink values to prevent navbar from disappearing. */
 .topnav {
-  background-color: #70598b;
+  background-color: #1d1ad1;
   overflow: hidden;
   flex: 0 0 auto;
 }
-/* Style the links inside the navigation bar */
+/* Styles for the links inside the navigation bar */
 .topnav a:not(:first-child) {display:none;}
 
 .topnav a:first-child {
@@ -82,7 +82,10 @@ footer a:visited {
   padding: 10px 16px;
 }
 /* Responsive class is added by JavaScript when a user clicks on the hamburger menu icon.*/
-.topnav.responsive {position: relative;}
+.topnav.responsive {
+  position: relative;
+}
+
 .topnav.responsive a.icon {
   position: absolute;
   right: 0;
@@ -125,6 +128,10 @@ img {
   max-height: 250px;
 }
 
+.reviewImg {
+max-height: 300px;
+}
+
 /* Styles for "Read More" buttons and hidden sections*/
 .more {
   display: none;
@@ -139,7 +146,7 @@ img {
 }
 
 button {
-  padding: .5em;
+  padding: .5rem;
   background-color: inherit;
   border: none;
   cursor: pointer;
@@ -162,26 +169,26 @@ button:hover {
 
 }
 
-#primeReview div:nth-of-type(odd) {
+#primeReview article:nth-of-type(odd) {
   background-color: black;
   color: white;
 }
 
-#primeReview div:nth-of-type(even) {
+#primeReview article:nth-of-type(even) {
   background-color: yellow;
 }
 
-#primeReview div:nth-of-type(odd) a {
+#primeReview article:nth-of-type(odd) a {
   color: white;
 }
  
 
 .reviews {
-  padding: .5em 10% 2em 10%;
+  padding: .5rem 10% 2rem 10%;
 }
 
 .reviewH2 {
-  padding-bottom: 1em;
+  padding-bottom: 1rem;
 }
 
 /* Styles for Form/Contact Us page */

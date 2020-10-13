@@ -26,7 +26,7 @@ function readLess() {
   }
 }
 
-function validateEmail() {
+function validateForm() {
   var x = document.forms["contactUs"]["user_name"].value;
   var y = document.forms["contactUs"]["user_email"].value;
   var z = document.forms["contactUs"]["user_message"].value;
