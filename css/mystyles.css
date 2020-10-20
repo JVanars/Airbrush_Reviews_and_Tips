@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Oswald', Arial, sans-serif;
-    background-color: #ebe5e5;
+    background-color: #bdb5b5;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ h2, p {
   text-align: left;
 }
 
-.row, .footer, .header {
+.row, .footer, header {
   padding: 10px 16px;
 }
 
@@ -269,7 +269,7 @@ label {
     flex-wrap: wrap;
   }
 
-  .header {
+  header {
     display: flex;
   }
 
