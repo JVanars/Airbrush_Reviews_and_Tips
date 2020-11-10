@@ -16,12 +16,20 @@ html, body {
   height: 100%;
 }
 
-h2, p {
+h2, h3, p {
   text-align: left;
+}
+
+h3 {
+  padding-top: 1rem;
 }
 
 .row, .footer, header {
   padding: 10px 16px;
+}
+
+li {
+  padding-top: .5rem;
 }
 
 
@@ -216,6 +224,11 @@ label {
   margin-top: 1em;
 }
 
+/* Styles for Techniques page */
+.strokes {
+  text-align: left;
+  padding-left: 1.5rem;
+}
 
 /* Base styles for footer social section*/
 .social {
