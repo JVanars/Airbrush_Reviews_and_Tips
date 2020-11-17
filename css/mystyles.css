@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Oswald', Arial, sans-serif;
-    background-color: #bdb5b5;
+    background-color: #e7e2dc;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -99,6 +99,7 @@ footer a:visited {
   right: 0;
   top: 0;
 }
+
 .topnav.responsive a {
   float: none;
   display: block;
@@ -125,6 +126,7 @@ footer a:visited {
 /* Styles for images */
 img {
   display: flex;
+  border-radius: 25px;
 }
 
 .responsiveImg {
@@ -230,6 +232,15 @@ label {
   padding-left: 1.5rem;
 }
 
+/* Styles for Order page */
+.outoforder {
+  background-color: yellow;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 25px;
+  box-shadow: 5px 7px blue;
+}
+
 /* Base styles for footer social section*/
 .social {
   padding: .5em;
@@ -249,7 +260,7 @@ label {
 
 /* Media Queries */
 
-/*breakpoint at 768px.*/
+/*Breakpoint at 768px.*/
 @media (min-width: 768px) {
   /*Displays the menu items that are hidden in the hamburger menu by default.*/
   .topnav a:not(:first-child) {display: block;}
@@ -287,7 +298,7 @@ label {
   }
 
   .headerContent {
-    padding-left: 1em;
+    padding-left: 2em;
     flex: 2 1 auto;
     width: auto;
   }
