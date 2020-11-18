@@ -37,7 +37,7 @@ function validateForm() {
     return false;
   } else {
     if (phone.match(x)) {
-      alert("Thank you! Your info has been received and we will contact you soon.");
+      alert(`Thank you, ${name}! Your info has been received and we will contact you soon.`);
       return true;
     } else {
       alert("Not a valid Phone Number");
