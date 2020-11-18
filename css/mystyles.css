@@ -136,11 +136,13 @@ img {
 
 #logo {
   max-height: 250px;
+  box-shadow: 5px 7px grey;
 }
 
 .reviewImg {
 max-height: 300px;
 }
+
 
 /* Styles for "Read More" buttons and hidden sections*/
 .more {
@@ -176,7 +178,6 @@ button:hover {
 
 #primeReview a {
   text-decoration: none;
-
 }
 
 #primeReview article:nth-of-type(odd) {
@@ -200,6 +201,8 @@ button:hover {
 .reviewH2 {
   padding-bottom: 1rem;
 }
+
+
 
 /* Styles for Form/Contact Us page */
 .form {
@@ -248,7 +251,7 @@ label {
 }
 
 
-/*Modern clearfix*/ /*might remove this*/
+/*Modern clearfix*/ /*included, but not used*/
 .clearfix::after {
   content: "";
   clear: both;
@@ -333,6 +336,7 @@ label {
     margin-left: auto;
   }
 
+  .review,
   .reviewH2 {
     text-align: center;
   }
